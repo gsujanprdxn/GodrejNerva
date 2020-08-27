@@ -39,7 +39,7 @@
         <div class="wrapper">
           <h1><a href="#"><img src="images/white-logo.png" alt="logo"></a></h1>
           <nav>
-            <ul>
+            <ul class="navbar">
               <li class="active"><a href="#FIXME">home</a></li>
               <li><a href="#FIXME">about</a></li>
               <li><a href="#FIXME">service</a></li>
@@ -53,37 +53,65 @@
       <main>
         <section class="gallery">
           <div class="wrapper">
-            <div class="imgnavigation">
-              <ul>
-                <li class="activenav">All</li>
-                <li>wallpaper</li>
-                <li>Logos</li>
-                <li>Business card</li>
-                <li>Stationary</li>
-                <li>Websites</li>
-                <li>Mobile Apps</li>
+              <ul class="imgnavigation">
+                <li class="activenav" data-target ="All">All</li>
+                <li data-target ="wallpaper">wallpaper</li>
+                <li data-target ="Logos">Logos</li>
+                <li data-target ="Business_card">Business card</li>
+                <li data-target ="Stationary">Stationary</li>
+                <li data-target ="Websites">Websites</li>
+                <li data-target ="Mobile_apps">Mobile Apps</li>
               </ul>
-            </div>
-            <div class="img_container">
-              <ul>
-                <li><img src="images/1.jpg" alt="img1"></li>
-                <li><img src="images/2.jpg" alt="img2"></li>
-                <li><img src="images/3.jpg" alt="img3"></li>
-                <li><img src="images/4.jpg" alt="img4"></li>
-                <li><img src="images/5.jpg" alt="img5"></li>
-                <li><img src="images/6.jpg" alt="img6"></li>
-                <li><img src="images/7.jpg" alt="img7"></li>
-                <li><img src="images/8.jpg" alt="img8"></li>
-                <li><img src="images/9.jpg" alt="img9"></li>
-                <li><img src="images/10.jpg" alt="img10"></li>
-                <li><img src="images/11.jpg" alt="img11"></li>
-                <li><img src="images/12.jpg" alt="img12"></li>
-                <li><img src="images/13.jpg" alt="img13"></li>
-                <li><img src="images/14.jpg" alt="img14"></li>
-                <li><img src="images/15.jpg" alt="img15"></li>
-                <li><img src="images/16.jpg" alt="img16"></li>
+              <ul class="img_container">
+                <li data-id ="wallpaper">
+                  <img src="images/1.jpg" alt="img1">
+                </li>
+                <li data-id ="wallpaper">
+                  <img src="images/2.jpg" alt="img2">
+                </li>
+                <li data-id ="wallpaper">
+                  <img src="images/3.jpg" alt="img3">
+                </li>
+                <li data-id ="Logos">
+                  <img src="images/4.jpg" alt="img4">
+                </li>
+                <li data-id ="Logos">
+                  <img src="images/5.jpg" alt="img5">
+                </li>
+                <li data-id ="Logos">
+                  <img src="images/6.jpg" alt="img6">
+                </li>
+                <li data-id ="Business_card">
+                  <img src="images/7.jpg" alt="img7">
+                </li>
+                <li data-id ="Business_card">
+                  <img src="images/8.jpg" alt="img8">
+                </li>
+                <li data-id ="Business_card">
+                  <img src="images/9.jpg" alt="img9">
+                </li>
+                <li data-id ="Stationary">
+                  <img src="images/10.jpg" alt="img10">
+                </li>
+                <li data-id ="Stationary">
+                  <img src="images/11.jpg" alt="img11">
+                </li>
+                <li data-id ="Stationary">
+                  <img src="images/12.jpg" alt="img12">
+                </li>
+                <li data-id ="Websites">
+                  <img src="images/13.jpg" alt="img13">
+                </li>
+                <li data-id ="Websites">
+                  <img src="images/14.jpg" alt="img14">
+                </li>
+                <li data-id ="Mobile_apps">
+                  <img src="images/15.jpg" alt="img15">
+                </li>
+                <li data-id ="Mobile_apps">
+                  <img src="images/16.jpg" alt="img16">
+                </li>
               </ul>
-            </div>
           </div>
         </section>
       </main>
@@ -152,7 +180,7 @@
 
     </div>
     <!--container ends here-->
-    <script src="js/vendors/jquery-1.8.3.min.js"></script>
-    <script src="js/script.js"></script>
+    <!-- <script src="js/vendors/jquery-1.8.3.min.js"></script> -->
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
