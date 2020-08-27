@@ -157,7 +157,7 @@ sub { bottom: -.25em; }
 }
 
 .container{
-  background: #333;
+  background: #1f1f1f;
   color: #fff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   box-sizing: border-box;
@@ -170,6 +170,7 @@ header .wrapper{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid #303030;
 }
 
 header .wrapper h1 img{
@@ -179,6 +180,7 @@ header .wrapper h1 img{
 
 header .wrapper nav{
   width: 45%;
+  
 }
 nav ul{
   display: flex;
@@ -197,6 +199,7 @@ nav ul li a{
   text-transform: uppercase;
   letter-spacing: 3px;
   opacity: .9;
+
 }
 
 .active::after{
@@ -207,17 +210,12 @@ nav ul li a{
   background: skyblue;
 }
 
-.gallery .wrapper::before{
-  content: " ";
-  display: block;
-  width: 100%;
-  height:2px;
-  background: grey;
+.gallery .wrapper{
+  border-bottom: 1px solid #303030;
 }
+
 .imgnavigation{
   width: 50%;
-}
-.gallery .wrapper .imgnavigation ul{
   height: 70px;
   display: flex;
   list-style: none;
@@ -226,33 +224,41 @@ nav ul li a{
   opacity: .8;
 
 }
-.imgnavigation ul li{
+.imgnavigation li{
   padding: 10px 12px;
   font-size: 11px;
   text-transform: capitalize;
+  cursor: pointer;
 }
 .activenav{
   background: greenyellow;
 }
-.imgnavigation ul li:hover{
+.imgnavigation li:hover{
   background: greenyellow;
 }
 
-.img_container ul{
+.img_container{
   display: flex;
   flex-wrap: wrap;
   list-style: none;
   margin-bottom: 40px;
 }
 
-.img_container ul li img{
+.img_container li img{
   width: 100%;
   height: 190px;
 }
 
-.img_container ul li{
+.img_container li{
+  position: relative;
   width: 25%;
 }
+
+.img_container li:hover .inner-hover{
+  display: block;
+  opacity: 1;
+}
+
 .upperfooter > ul{
   height: 215px;
   padding-top: 30px;
@@ -265,13 +271,6 @@ nav ul li a{
   width: 252px;
 }
 
-footer .wrapper::before{
-  content: " ";
-  display: block;
-  width: 100%;
-  height:2px;
-  background: grey;
-}
 .flickr{
   display: flex;
   flex-wrap: wrap;
@@ -287,7 +286,7 @@ footer .wrapper::before{
 .upperfooter{
   height: 250px;
   box-sizing: border-box;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid #303030;
 }
 
 .upperfooterlist li{
@@ -369,6 +368,11 @@ footer .wrapper::before{
   align-items: center;
 }
 
+.bottomfooter span{
+  font-size: 12px;
+  opacity: 0.3;
+}
+
 .footer-social-icons{
   display: flex;
   float: left;
@@ -377,10 +381,114 @@ footer .wrapper::before{
   color: #fff;
 }
 
-.footer-social-icons a{
+.footer-social-icons a i{
   color: #fff;
+  font-size: 15px;
+  line-height: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .footer-social-icons li{
-  padding: 10px;
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+  background-color: #7c7c7c;
+  border-radius: 50%;
+  position: relative;
+}
+
+.footer-social-icons li:hover{
+  background-color: #8fd0a6;
+}
+.inner-hover{
+  width: 100%;
+  height: 190px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background: #8fd0a6;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+  
+}
+
+.inner-hover h2{
+  padding-top:20%;
+  font-size: 22px;
+}
+
+.inner-hover p{
+  font-size: 14px;
+}
+
+.inner-hover a{
+  display: inline-block;
+  width: 40px;
+  margin-top: 10px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #fff;
+  text-decoration: none;
+  color: #8fd0a6;
+}
+
+.togglearea{
+  border-bottom: 2px solid grey;
+  display: flex;
+  justify-content: flex-end;
+  display: none;
+}
+
+.togglearea label{
+  background-color: #1f1f1f;
+  height: 40px;
+  width: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.togglearea label span{
+  background-color: grey;
+  height: 3px;
+  width: 80%;
+  margin: 3px 0px;
+}
+
+#toggle{
+  display: none;
+}
+@media screen and (max-width:900px){
+  
+  header .wrapper{
+    flex-direction: column;
+    height: 150px;
+  }
+  header .wrapper nav{
+    width: 100%;
+  }
+  nav ul{
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar{
+    display: none;
+  }
+  #toggle{
+    display: none;
+  }
+  #toggle:checked + .navbar{
+    display: flex;
+  }
+  .togglearea{
+    display:flex ;
+  }
 }
