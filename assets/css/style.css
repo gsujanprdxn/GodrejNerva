@@ -231,7 +231,9 @@ nav ul li a{
   font-size: 11px;
   text-transform: capitalize;
 }
-
+.activenav{
+  background: greenyellow;
+}
 .imgnavigation ul li:hover{
   background: greenyellow;
 }
@@ -244,14 +246,141 @@ nav ul li a{
 }
 
 .img_container ul li img{
-  width: 252px;
+  width: 100%;
   height: 190px;
 }
-.upperfooter ul{
+
+.img_container ul li{
+  width: 25%;
+}
+.upperfooter > ul{
+  height: 215px;
+  padding-top: 30px;
   display: flex;
+  list-style: none;
+
+}
+
+.upperfooterlist > li{
+  width: 252px;
+}
+
+footer .wrapper::before{
+  content: " ";
+  display: block;
+  width: 100%;
+  height:2px;
+  background: grey;
+}
+.flickr{
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
 }
 
-.upperfooter ul li{
-  width: 252px;
+.flickr img{
+  box-sizing: border-box;
+  width: 50px;
+  padding: 3px;
+}
+
+.upperfooter{
+  height: 250px;
+  box-sizing: border-box;
+  border-bottom: 1px solid grey;
+}
+
+.upperfooterlist li{
+  margin-right: 10px;
+}
+
+.upperfooterlist li h2{
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.upperfooterlist li p{
+  font-size:12px;
+  opacity: .3;
+  padding-bottom: 10px;
+}
+
+.recent-posts{
+  list-style: none;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.recent-posts li{
+  border-bottom: 2px solid grey;
+  padding: 5px 0px;
+}
+
+.recent-posts li:first-child{
+  padding-top: 0px;
+}
+
+.recent-posts li:last-child{
+  border: none;
+}
+
+.recent-posts a{
+  text-decoration: none;
+  color: #fff;
+  font-size:12px;
+  opacity: .3;
+
+}
+
+.upperfooterlist li:nth-child(3) > ul{
+  list-style: none;
+}
+
+.tags{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tags li{
+  height: 30px;
+  background:#8fd0a6;
+  margin: 5px;
+}
+.tags a{
+  color: #fff;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-size: 12px;
+  padding:5px;
+  text-align: center;
+  line-height:30px;
+}
+.tags li:hover{
+  background:#c1c1c1;
+}
+
+.bottomfooter{
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-social-icons{
+  display: flex;
+  float: left;
+  align-items: center;
+  list-style: none;
+  color: #fff;
+}
+
+.footer-social-icons a{
+  color: #fff;
+}
+
+.footer-social-icons li{
+  padding: 10px;
 }
