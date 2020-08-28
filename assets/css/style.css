@@ -218,6 +218,7 @@ nav ul li a{
   width: 50%;
   height: 70px;
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   justify-content: space-between;
   align-items: center;
@@ -260,15 +261,14 @@ nav ul li a{
 }
 
 .upperfooter > ul{
-  height: 215px;
   padding-top: 30px;
   display: flex;
   list-style: none;
-
 }
 
 .upperfooterlist > li{
   width: 252px;
+  margin-right: 10px;
 }
 
 .flickr{
@@ -277,9 +277,13 @@ nav ul li a{
   list-style: none;
 }
 
+.flickr li{
+  width: 20%;
+}
+
 .flickr img{
   box-sizing: border-box;
-  width: 50px;
+  width: 100%;
   padding: 3px;
 }
 
@@ -289,9 +293,6 @@ nav ul li a{
   border-bottom: 1px solid #303030;
 }
 
-.upperfooterlist li{
-  margin-right: 10px;
-}
 
 .upperfooterlist li h2{
   padding-bottom: 20px;
@@ -466,18 +467,26 @@ nav ul li a{
 #toggle{
   display: none;
 }
+
+@media screen and (max-width:1200px){
+  .img_container li{
+    width: 33.33%;
+  }
+  .flickr li{
+    width: 33.33%;
+  }
+}
 @media screen and (max-width:900px){
   
-  header .wrapper{
+  nav{
     flex-direction: column;
-    height: 150px;
   }
   header .wrapper nav{
     width: 100%;
   }
   nav ul{
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
   }
   .navbar{
     display: none;
@@ -491,4 +500,16 @@ nav ul li a{
   .togglearea{
     display:flex ;
   }
+  .imgnavigation{
+    width: 100%;
+  }
+
+  .img_container li{
+    width: 50%;
+  }
+
+  .flickr li{
+    width: 30%;
+  }
 }
+
