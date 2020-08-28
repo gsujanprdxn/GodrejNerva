@@ -4,8 +4,7 @@
 var category = document.querySelector('.imgnavigation').children;
 var images = document.querySelector('.img_container').children;
 var navbar = document.querySelector('.navbar').children
-// console.log(category);
-// console.log(images);
+
 
 for(var i=0;i<navbar.length;i++){
     navbar[i].addEventListener("click",function(){
