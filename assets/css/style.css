@@ -162,15 +162,15 @@ sub { bottom: -.25em; }
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   box-sizing: border-box;
 }
-.wrapper{
-  margin: 0px 170px;
-}
+
+.wrapper{margin: 0px 170px;}
+
 header .wrapper{
   height: 100px;
+  border-bottom: 1px solid #303030;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #303030;
 }
 
 header .wrapper h1 img{
@@ -178,10 +178,8 @@ header .wrapper h1 img{
   height: 25px;
 }
 
-header .wrapper nav{
-  width: 45%;
-  
-}
+header .wrapper nav{width: 45%;}
+
 nav ul{
   display: flex;
   flex-wrap: wrap;
@@ -199,20 +197,17 @@ nav ul li a{
   text-transform: uppercase;
   letter-spacing: 3px;
   opacity: .9;
-
 }
 
 .active::after{
-  display: block;
-  content: " ";
   width: 100%;
   height:3px;
+  display: block;
+  content: " ";
   background: skyblue;
 }
 
-.gallery .wrapper{
-  border-bottom: 1px solid #303030;
-}
+.gallery .wrapper{border-bottom: 1px solid #303030;}
 
 .imgnavigation{
   width: 50%;
@@ -223,20 +218,17 @@ nav ul li a{
   justify-content: space-between;
   align-items: center;
   opacity: .8;
-
 }
+
 .imgnavigation li{
   padding: 10px 12px;
   font-size: 11px;
   text-transform: capitalize;
   cursor: pointer;
 }
-.activenav{
-  background: greenyellow;
-}
-.imgnavigation li:hover{
-  background: greenyellow;
-}
+
+.activenav{background: greenyellow;}
+.imgnavigation li:hover{background: greenyellow;}
 
 .img_container{
   display: flex;
@@ -277,9 +269,7 @@ nav ul li a{
   list-style: none;
 }
 
-.flickr li{
-  width: 20%;
-}
+.flickr li{width: 20%;}
 
 .flickr img{
   box-sizing: border-box;
@@ -292,7 +282,6 @@ nav ul li a{
   box-sizing: border-box;
   border-bottom: 1px solid #303030;
 }
-
 
 .upperfooterlist li h2{
   padding-bottom: 20px;
@@ -318,37 +307,30 @@ nav ul li a{
   padding: 5px 0px;
 }
 
-.recent-posts li:first-child{
-  padding-top: 0px;
-}
-
-.recent-posts li:last-child{
-  border: none;
-}
+.recent-posts li:first-child{padding-top: 0px;}
+.recent-posts li:last-child{border: none;}
 
 .recent-posts a{
   text-decoration: none;
   color: #fff;
   font-size:12px;
   opacity: .3;
-
 }
 
-.upperfooterlist li:nth-child(3) > ul{
-  list-style: none;
-}
+.upperfooterlist li:nth-child(3) > ul{list-style: none;}
 
 .tags{
-  list-style: none;
   display: flex;
   flex-wrap: wrap;
+  list-style: none;
 }
 
 .tags li{
   height: 30px;
-  background:#8fd0a6;
   margin: 5px;
+  background:#8fd0a6;
 }
+
 .tags a{
   color: #fff;
   box-sizing: border-box;
@@ -358,9 +340,8 @@ nav ul li a{
   text-align: center;
   line-height:30px;
 }
-.tags li:hover{
-  background:#c1c1c1;
-}
+
+.tags li:hover{background:#c1c1c1;}
 
 .bottomfooter{
   height: 60px;
@@ -415,7 +396,6 @@ nav ul li a{
   background: #8fd0a6;
   opacity: 0;
   transition: 0.5s ease-in-out;
-  
 }
 
 .inner-hover h2{
