@@ -547,7 +547,7 @@ nav ul li a{
   .upperfooter > ul{
     display: block;
   }
-  .upperfooter > ul.li{
+  .upperfooterlist li{
     width: 100%;
   }
 }
