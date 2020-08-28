@@ -34,7 +34,9 @@ for(var i=0;i<category.length;i++){
         }
     })
 }
-
+document.querySelector('.hamberger-menu').addEventListener('click',()=>{
+    document.querySelector('.navigation').classList.toggle("change")
+})
 
 
 

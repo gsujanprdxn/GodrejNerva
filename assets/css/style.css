@@ -150,6 +150,49 @@ sub { bottom: -.25em; }
  * followed throughout the site, then menstion the font property in body. No need
  * of creating an extra class for it) */
 
+/* .menu-toggle{display: none;} */
+.hamberger-menu{
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 10px;
+  border: none;
+  border-radius: 30%;
+  outline: none;
+  cursor: pointer;
+  z-index: 5;
+  display: none;
+}
+
+.line{
+  width: 30px;
+  height: 2px;
+  margin: 4px 0px;
+  display: block;
+  background-color:black;
+  transform-origin: right;
+  font-size: 0px;
+}
+
+.change .line1{
+  transform: rotate(-40deg)translateY(-5px);
+  translate: (-5px);
+}
+.change .line2{
+  opacity: 0;
+}
+.change .line3{
+  transform: rotate(40deg)translateY(5px);
+}
+.bg-cover{
+  width: 40px;
+  height: 40px;
+  background-color: lavender;
+  position: absolute;
+  right: 10px;
+  border-radius: 30%;
+}
+
 .futura-bold-font {
   font-family: 'Futura Bold', 'Gill Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
   font-style: normal;
@@ -163,7 +206,7 @@ sub { bottom: -.25em; }
   box-sizing: border-box;
 }
 
-.wrapper{margin: 0px 170px;}
+.wrapper{margin: 0px 10%;position: relative;overflow: hidden;}
 
 header .wrapper{
   height: 100px;
@@ -278,7 +321,6 @@ nav ul li a{
 }
 
 .upperfooter{
-  height: 250px;
   box-sizing: border-box;
   border-bottom: 1px solid #303030;
 }
@@ -363,7 +405,7 @@ nav ul li a{
   color: #fff;
 }
 
-.footer-social-icons a i{
+.footer-social-icons a{
   color: #fff;
   font-size: 15px;
   line-height: 25px;
@@ -371,6 +413,7 @@ nav ul li a{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-indent: -9999px;
 }
 
 .footer-social-icons li{
@@ -457,7 +500,11 @@ nav ul li a{
   }
 }
 @media screen and (max-width:900px){
-  
+  .hamberger-menu{
+    display: block;
+    position: absolute;
+    top: 30%;
+  }
   nav{
     flex-direction: column;
   }
@@ -493,3 +540,50 @@ nav ul li a{
   }
 }
 
+@media screen and (max-width:768px){
+  .img_container li{
+    width: 100%;
+  }
+  .upperfooter > ul{
+    display: block;
+  }
+  .upperfooter > ul.li{
+    width: 100%;
+  }
+}
+.twitter::before{
+  content: "\f099";
+  float: right;
+  font-family: "Font Awesome";
+  text-indent: 0;
+}
+.gplus::before{
+  content: "\f099";
+  float: right;
+  font-family: "Font Awesome";
+  text-indent: 0;
+}
+.rss::before{
+  content: "\f099";
+  float: right;
+  font-family: "Font Awesome";
+  text-indent: 0;
+}
+.linkdn::before{
+  content: "\f099";
+  float: right;
+  font-family: "Font Awesome";
+  text-indent: 0;
+}
+.pinterest::before{
+  content: "\f099";
+  float: right;
+  font-family: "Font Awesome";
+  text-indent: 0;
+}
+.fb::before{
+  content: "\f39e";
+  float: right;
+  font-family: "Font Awesome";
+  text-indent: 0;
+}
