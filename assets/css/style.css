@@ -216,14 +216,8 @@ nav ul li a{
 
 .imgnavigation{
   width: 50%;
-<<<<<<< HEAD
-<<<<<<< HEAD
 }
 .gallery .wrapper .imgnavigation{
-=======
->>>>>>> 351830078f0cbf346d22c2dd10bcb8cd0a418b17
-=======
->>>>>>> feature-js
   height: 70px;
   display: flex;
   list-style: none;
@@ -258,14 +252,8 @@ nav ul li a{
 }
 
 .img_container li{
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
   position: relative;
->>>>>>> 351830078f0cbf346d22c2dd10bcb8cd0a418b17
-=======
   position: relative;
->>>>>>> feature-js
   width: 25%;
 }
 
